@@ -53,7 +53,7 @@ ${Questions}
 https://github.com/${Github}
 `;
 
-fs.writeFile('README.md', readme, (err) => {
+fs.writeFile('NewREADME.md', readme, (err) => {
     err ? console.error(err) : console.log('File creation success!!')
 } )
 };

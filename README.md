@@ -1,48 +1,17 @@
-
-    #  testing
+#  Jasons README Generator
 
 ## Description
 
-description of readme
-
-## Table of Contents
-
-* [Description](#description)
-
-* [Usage](#usage)
-
-* [License](#license)
-
-* [Contributing](#contributing)
-
-* [Tests](#tests)
-
-* [Questions](#questions)
-
-## Installation
-
-npm install
+Using node.js, I have created a README generator.
 
 ## Usage
 
-clone the repository
+To use the generator, you must clone this repository. Then npm install, then run 'node index.js'.
 
-## License
+## Walkthrough Video
 
-undefined
-
-## Contributing
-
-contact me
-
-## Tests
-
-npm test
+link here:
 
 ## Questions
 
-If you have any questions, feel to reach out to me 
-    
-lala@test.com
-
-https://github.com/hell00me
+If you have any questions you can email me at Jasonkodama@gmail.com
