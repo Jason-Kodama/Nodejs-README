@@ -2,56 +2,58 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateReadMe = ({Title, Description, Table, Installation, Usage, License, Contributing, Tests, Questions}) => {
+const generateReadMe = ({Title, Description, Github, Installation, Usage, License, Contributing, Tests, Questions}) => {
     const readme = `
-    # ${Title}
+    #  ${Title}
 
-    ## Description
+## Description
+
+${Description}
+
+## Table of Contents
+
+* [Description](#description)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
+## Installation
+
+${Installation}
+
+## Usage
+
+${Usage}
+
+## License
+
+${License}
+
+## Contributing
+
+${Contributing}
+
+## Tests
+
+${Tests}
+
+## Questions
+
+If you have any questions, feel to reach out to me 
     
-    ${Description}
-    
-    ## Table of Contents
-    
-    * [Description](#description)
-    
-    * [Usage](#usage)
-    
-    * [License](#license)
-    
-    * [Contributing](#contributing)
-    
-    * [Tests](#tests)
-    
-    * [Questions](#questions)
-    
-    ## Installation
-    
-    ${Installation}
-    
-    ## Usage
-    
-    ${Usage}
-    
-    ## License
-    
-    ${License}
-    
-    ## Contributing
-    
-    ${Contributing}
-    
-    ## Tests
-    
-    ${Tests}
-    
-    ## Questions
-    
-    If you have any questions, feel to reach out to me 
-    ${Questions}
-    https://github.com/Jason-Kodama
-    
-    `;
-fs.writeFile('README.MD', readme, (err) => {
+${Questions}
+
+https://github.com/${Github}
+`;
+
+fs.writeFile('README.md', readme, (err) => {
     err ? console.error(err) : console.log('File creation success!!')
 } )
 };
@@ -71,12 +73,12 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Write an installation guide.',
+            message: 'What is the installing process?',
             name: 'Installation',
         },
         {
             type: 'input',
-            message: 'Write contents for the Usage section.',
+            message: 'How do you use this file?',
             name: 'Usage',
         },
         {
@@ -92,7 +94,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Enter tests used.',
+            message: 'How do you run tests?',
             name: 'Tests',
         },
         {

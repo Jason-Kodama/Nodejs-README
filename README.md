@@ -1,8 +1,9 @@
-#  ${Title}
+
+    #  testing
 
 ## Description
 
-${Description}
+description of readme
 
 ## Table of Contents
 
@@ -20,28 +21,28 @@ ${Description}
 
 ## Installation
 
-${Installation}
+npm install
 
 ## Usage
 
-${Usage}
+clone the repository
 
 ## License
 
-${License}
+undefined
 
 ## Contributing
 
-${Contributing}
+contact me
 
 ## Tests
 
-${Tests}
+npm test
 
 ## Questions
 
 If you have any questions, feel to reach out to me 
     
-${Questions}
+lala@test.com
 
-https://github.com/${Github}
+https://github.com/hell00me
